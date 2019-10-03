@@ -38,13 +38,13 @@ public class ShoppingRuApplication {
 		Scanner scanner = new Scanner(System.in);
 		String orderedItemsFromUser = scanner.nextLine().trim();
 		if (orderedItemsFromUser.isEmpty()) {
-			System.out.println("Total Cost : " + BigDecimal.ZERO);
+			System.out.println("Total Cost : $ 0.00");
 		} else {
 			String[] items = orderedItemsFromUser.toLowerCase().split(",");
 			for (String item : items) {
 				checkout.scan(item.trim());
 			}
-			System.out.println("Total Cost is $" + checkout.calculateTotalCost());
+			System.out.println("Total Cost is $ " + checkout.calculateTotalCost());
 		}
 	}
 }
