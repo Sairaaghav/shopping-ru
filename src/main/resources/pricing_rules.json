@@ -1,0 +1,66 @@
+{
+	"itemPricingRules" : [
+		{
+			"sku" : "atv",
+			"rules" : [
+				{
+					"orderedQuantity" : 3,
+					"condition" : "PIECE_DISCOUNT",
+					"results" : [
+						{
+							"sku" : "atv",
+							"value" : "UNIT_PRICE",
+							"multiplier" : 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"sku" : "ipd",
+			"rules" : [
+				{
+					"orderedQuantity" : 5,
+					"condition" : "BULK_DISCOUNT",
+					"results" : [
+						{
+							"sku" : "ipd",
+							"value" : "QUANTITY",
+							"multiplier" : 499.99
+						}
+					]
+				}
+			]
+		},
+		{
+			"sku" : "mbp",
+			"rules" : [
+				{
+					"orderedQuantity" : 1,
+					"condition" : "PIECE_DISCOUNT",
+					"results" : [
+						{
+							"sku" : "mbp",
+							"value" : "UNIT_PRICE",
+							"multiplier" : 1
+						},
+						{
+							"sku" : "vga",
+							"value" : "UNIT_PRICE",
+							"multiplier" : 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"sku" : "vga",
+			"rules" : [
+				{
+					"orderedQuantity" : 1,
+					"condition" : "NIL_DISCOUNT"
+				}
+			]
+		}
+	]
+}
