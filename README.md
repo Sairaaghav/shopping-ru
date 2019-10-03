@@ -8,7 +8,6 @@ Compile and run the program as below.
 
 Test cases covered are in the ShoppingRuApplicationTest.java JUnit class.
 
-Scenario and the screenshots for the tests are attached in the Issues section.
 
 1) shopping-ru - test case - 1 - Purchasing Three Apple TVs
 ![image](https://user-images.githubusercontent.com/2177222/66103417-534e2080-e5d3-11e9-88e5-ed864cf20b37.png)
