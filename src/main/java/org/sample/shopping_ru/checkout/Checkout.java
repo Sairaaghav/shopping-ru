@@ -1,6 +1,7 @@
 package org.sample.shopping_ru.checkout;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -47,6 +48,7 @@ public class Checkout {
 			}
 		}
 		
+		totalCost = totalCost.setScale(2, RoundingMode.UP);
 		return totalCost;
 	}
 
