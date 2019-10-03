@@ -14,7 +14,7 @@ import org.sample.shopping_ru.util.ResourceHelper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * Shopping RU.
+ * Shopping RU - A Shopping Cart Application.
  *
  */
 public class ShoppingRuApplication {
@@ -36,7 +36,7 @@ public class ShoppingRuApplication {
 
 		Checkout checkout = new Checkout(catalogue, pricingRules);
 		Scanner scanner = new Scanner(System.in);
-		while (true) {
+//		while (true) {
 			String orderedItemsFromUser = scanner.nextLine().trim();
 			if (orderedItemsFromUser.isEmpty()) {
 				System.out.println("Total Cost : " + BigDecimal.ZERO);
@@ -49,7 +49,7 @@ public class ShoppingRuApplication {
 			}
 			
 			// clean map // for test
-			checkout.clear();
-		}
+//			checkout.clear();
+//		}
 	}
 }
