@@ -44,7 +44,7 @@ public class ShoppingRuApplication {
 			for (String item : items) {
 				checkout.scan(item.trim());
 			}
-			System.out.println(checkout.calculateTotalCost());
+			System.out.println("Total Cost is $" + checkout.calculateTotalCost());
 		}
 	}
 }
